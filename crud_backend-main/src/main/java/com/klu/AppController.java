@@ -5,8 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:9090") // ✅ frontend served from same Tomcat
-@RequestMapping("/springapp1") // ✅ main path
+@CrossOrigin(origins = "http://localhost:9090")  // ✅ your frontend is deployed in same Tomcat
+@RequestMapping("/springapp1")  // ✅ main API base path
 public class AppController {
 
     @Autowired
