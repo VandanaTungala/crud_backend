@@ -3,6 +3,7 @@ package com.klu;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+// test trigger
 
 @RestController
 @CrossOrigin(origins = "http://localhost:5174") // 👈 add frontend URL here
