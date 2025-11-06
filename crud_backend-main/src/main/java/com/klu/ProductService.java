@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class Service {
+public class ProductService {
     
     @Autowired
     Repo r1;
@@ -28,7 +28,6 @@ public class Service {
         }
     }
 
-    // ✅ Un-commented and added delete logic
     public String deleteData(int id) {
         if (r1.existsById(id)) {
             r1.deleteById(id);
